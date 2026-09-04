@@ -18,7 +18,7 @@ const Header = () => {
           <i className="text-[24px]">
             <IoIosBicycle />
           </i>
-          <p className="text-[22px]">InstantMart</p>
+          <p className="text-[22px] font-bold">InstantMart</p>
         </div>
 
         <div className="hidden sm:flex flex-1 justify-center items-center gap-8">
@@ -31,7 +31,6 @@ const Header = () => {
             </li>
             <li className="cursor-pointer text-header-res-1">Deals</li>
           </ul>
-
           <div className="relative flex items-center">
             <input
               type="text"
@@ -117,7 +116,7 @@ const Header = () => {
           ${menu ? "opacity-100 scale-100 visible" : "opacity-0 scale-95 invisible"}
         `}
       >
-        <div className="px-5 py-4">
+        <div className="px-5 py-4 text-[14px]">
           <button
             onClick={() => setMenu(false)}
             className="w-full flex items-center gap-5 py-3 text-[#74747d] text-[16px] text-left"
