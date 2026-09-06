@@ -2,6 +2,8 @@
 import React from "react";
 import Hero from "./Common/Hero";
 import Categories from "./Common/Categories";
+import PopProducts from "./Common/PopProducts";
+import Store from "./Common/Store";
 
 const page = () => {
   return (
@@ -9,6 +11,8 @@ const page = () => {
       <div >
         <Hero/>
         <Categories/>
+        <PopProducts/>
+        <Store/>
       </div>
     </>
   );

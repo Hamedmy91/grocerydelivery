@@ -2,7 +2,6 @@
 
 import React from "react";
 import Image from "next/image";
-
 const Categories = () => {
   const categories = [
     {
@@ -66,63 +65,20 @@ const Categories = () => {
           Find exactly what you need using
         </p>
       </div>
-
-      <div
-        className="
-          flex
-          w-full
-          gap-5
-          overflow-x-auto
-          scroll-smooth
-          scrollbar-hide
-          cursor-grab
-          active:cursor-grabbing
-          sm:justify-center 
-          sm:pl-20
-        "
-      >
+      <div className=" flex w-full gap-5 overflow-x-auto scroll-smooth scrollbar-hide cursor-grab active:cursor-grabbing sm:justify-center sm:pl-20 ">
         {categories.map((category) => (
           <div
             key={category.title}
-            className="
-              flex
-              w-18
-              shrink-0
-              flex-col
-              items-center
-              gap-3
-              sm:w-26
-            "
+            className="flex w-18 shrink-0 flex-col items-center gap-3 sm:w-26"
           >
             <Image
               src={category.image}
               alt={category.alt}
               width={104}
               height={104}
-              className="
-                h-18
-                w-18
-                rounded-xl
-                border
-                border-[#ffeed4]
-                bg-[#ffeed4]
-                object-contain
-                sm:h-26
-                sm:w-26
-              "
+              className="h-18 w-18 rounded-xl border border-[#ffeed4] bg-[#ffeed4] object-contain sm:h-26 sm:w-26"
             />
-
-            <p
-              className="
-                h-7.5
-                w-18
-                text-center
-                text-[12px]
-                font-medium
-                text-header-res
-                sm:w-26
-              "
-            >
+            <p className="h-7.5 w-18 text-center text-[12px] font-medium text-header-res sm:w-26">
               {category.title}
             </p>
           </div>

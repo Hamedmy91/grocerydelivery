@@ -35,19 +35,7 @@ const Header = () => {
             <input
               type="text"
               placeholder="Search for groceries"
-              className="
-                border
-                border-header-res-1/15
-                bg-[#f7f6f4]
-                w-[384px]
-                h-9
-                rounded-full
-                pl-9
-                pr-4
-                text-[14px]
-                text-header
-                outline-none
-              "
+              className="border border-header-res-1 bg-[#f7f6f4] w-[384px] h-9 rounded-full pl-9 pr-4 text-[14px] text-header"
             />
             <i className="absolute left-3 text-[18px] text-header">
               <CiSearch />
@@ -73,21 +61,7 @@ const Header = () => {
             <IoCartOutline />
           </i>
 
-          <button
-            className="
-              flex
-              gap-2
-              items-center
-              h-9
-              px-4
-              rounded-full
-              bg-header
-              text-white
-              cursor-pointer
-              hover:opacity-90
-              transition-opacity
-            "
-          >
+          <button className="flex gap-2 items-center h-9 px-4 rounded-full bg-header text-white cursor-pointer hover:opacity-90 transition-opacity">
             <FaRegUser className="text-[16px]" />
             <span className="text-[14px] font-medium whitespace-nowrap">
               Sign In
@@ -98,23 +72,7 @@ const Header = () => {
 
       {/*MOBILE MENU */}
       <div
-        className={`
-          sm:hidden
-          absolute
-          top-16
-          right-4
-          w-68
-          bg-white
-          rounded-2xl
-          shadow-[0_4px_15px_rgba(0,0,0,0.12)]
-          border
-          border-[#eeeeee]
-          overflow-hidden
-          transition-all
-          duration-200
-          origin-top-right
-          ${menu ? "opacity-100 scale-100 visible" : "opacity-0 scale-95 invisible"}
-        `}
+        className={`sm:hidden absolute top-16 right-4 w-68 bg-white rounded-2xl shadow-[0_4px_15px_rgba(0,0,0,0.12)] border border-[#eeeeee] overflow-hidden transition-all duration-200 origin-top-right ${menu ? "opacity-100 scale-100 visible" : "opacity-0 scale-95 invisible"}`}
       >
         <div className="px-5 py-4 text-[14px]">
           <button
