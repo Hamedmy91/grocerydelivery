@@ -37,7 +37,7 @@ const Header = () => {
               placeholder="Search for groceries"
               className="
                 border
-                border-[#f9731626]
+                border-header-res-1/15
                 bg-[#f7f6f4]
                 w-[384px]
                 h-9
