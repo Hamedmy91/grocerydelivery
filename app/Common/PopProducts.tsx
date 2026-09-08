@@ -43,12 +43,11 @@ const PopProducts = () => {
             </i>
           </button>
         </div>
-
-        <div className="grid grid-cols-2 gap-4 relative sm:grid sm:grid-cols-5 sm:pl-40">
+        <div className="grid grid-cols-2 gap-4 relative sm:grid sm:grid-cols-5 sm:pl-32 ">
           {products?.slice(0, 10).map((product) => (
             <div
               key={product.id}
-              className="bg-white border border-white outline-1 outline-amber-50 rounded-[10px] w-41 h-80 mb-10  "
+              className="bg-white border border-white outline-1 outline-amber-50 rounded-[10px] w-41 h-80 mb-10 sm:w-54.5 sm:h-80.75 "
             >
               <div className="relative">
                 <div className="absolute top-2 left-2 text-white bg-header-res-1 text-[10px] rounded-full px-2 py-1 font-medium z-10">
@@ -62,14 +61,12 @@ const PopProducts = () => {
                   className="object-contain w-full h-full"
                 />
               </div>
-
               <div className="flex flex-col p-4 gap-2">
                 <div>
-                  <p className="text-[#3f3f47] font-medium text-[14px]">
+                  <p className="text-[#3f3f47] font-medium text-[14px] ">
                     {product.name}
                   </p>
                 </div>
-
                 <div className="flex items-center gap-1">
                   <FaStar className="text-amber-400 text-[12px]" />
                   <span className="text-[12px] font-medium text-header">

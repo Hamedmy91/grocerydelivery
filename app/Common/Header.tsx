@@ -7,6 +7,7 @@ import { CiMenuBurger, CiSearch } from "react-icons/ci";
 import { FaRegUser } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
 import { FiArrowUpRight } from "react-icons/fi";
+import Link from "next/link";
 
 const Header = () => {
   const [menu, setMenu] = useState(false);
@@ -14,22 +15,22 @@ const Header = () => {
   return (
     <header className="relative z-50">
       <div className="flex justify-between items-center gap-4 p-4 max-w-6xl mx-auto">
-        <div className="flex gap-2 items-center text-header shrink-0">
+        <Link href="/" className="flex gap-2 items-center text-header shrink-0" >
           <i className="text-[24px]">
             <IoIosBicycle />
           </i>
           <p className="text-[22px] font-bold">InstantMart</p>
-        </div>
+        </Link>
 
         <div className="hidden sm:flex flex-1 justify-center items-center gap-8">
           <ul className="flex gap-6 items-center text-header-res text-[14px] font-medium">
-            <li className="cursor-pointer hover:text-header transition-colors">
+            <Link href="/" className="cursor-pointer hover:text-header transition-colors">
               Home
-            </li>
-            <li className="cursor-pointer hover:text-header transition-colors">
+            </Link>
+            <Link href="/Products" className="cursor-pointer hover:text-header transition-colors">
               Products
-            </li>
-            <li className="cursor-pointer text-header-res-1">Deals</li>
+            </Link>
+            <Link href="/Deals" className="cursor-pointer text-header-res-1">Deals</Link>
           </ul>
           <div className="relative flex items-center">
             <input
@@ -82,20 +83,20 @@ const Header = () => {
             <FaRegUser className="text-[17px]" />
             <span>Sign In</span>
           </button>
-          <button
+          <Link  href="/Products"
             onClick={() => setMenu(false)}
             className="w-full flex items-center gap-5 py-3 text-[#74747d] text-[16px] text-left"
           >
             <FiArrowUpRight className="text-[14px]" />
             <span>Products</span>
-          </button>
-          <button
+          </Link>
+          <Link href="/Deals"
             onClick={() => setMenu(false)}
             className="w-full flex items-center gap-5 py-3 text-[#74747d] text-[16px] text-left"
           >
             <FiArrowUpRight className="text-[18px]" />
             <span>Deals</span>
-          </button>
+          </Link>
         </div>
       </div>
     </header>

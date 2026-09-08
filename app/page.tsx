@@ -4,6 +4,7 @@ import Hero from "./Common/Hero";
 import Categories from "./Common/Categories";
 import PopProducts from "./Common/PopProducts";
 import Store from "./Common/Store";
+import Newsletter from "./Common/Newsletter";
 
 const page = () => {
   return (
@@ -13,6 +14,7 @@ const page = () => {
         <Categories/>
         <PopProducts/>
         <Store/>
+        <Newsletter/>
       </div>
     </>
   );
