@@ -5,6 +5,7 @@ import Image from "next/image";
 import { LuLeaf } from "react-icons/lu";
 import { IoArrowForward } from "react-icons/io5";
 import Special from "./Special";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -35,15 +36,21 @@ const Hero = () => {
               doorstep. Quality you can taste, convenience you deserve.
             </p>
             <div className="sm:flex sm:flex-row sm:gap-2 flex flex-col gap-3">
-              <button className="bg-[#ff8904] w-38.25 h-12 flex justify-center  rounded-full font-medium gap-4 items-center text-[16px] text-white">
+              <Link
+                href="/Products"
+                className="bg-[#ff8904] w-38.25 h-12 flex justify-center  rounded-full font-medium gap-4 items-center text-[16px] text-white"
+              >
                 <p>Shop Now</p>
                 <i>
                   <IoArrowForward />
                 </i>
-              </button>
-              <button className="bg-[#ffffff1a] text-white w-48.5 h-12.5 flex justify-center items-center  rounded-full border border-[#ffffff33] text-[16px] font-medium">
+              </Link>
+              <Link
+                href="/Products"
+                className="bg-[#ffffff1a] text-white w-48.5 h-12.5 flex justify-center items-center  rounded-full border border-[#ffffff33] text-[16px] font-medium"
+              >
                 Browse Categories
-              </button>
+              </Link>
             </div>
           </div>
         </div>

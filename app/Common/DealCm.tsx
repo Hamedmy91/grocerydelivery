@@ -134,7 +134,6 @@ const DealCm = () => {
           </p>
         </div>
       </div>
-
       <div className="mx-auto grid w-full max-w-7xl grid-cols-2 gap-3 px-3 py-6 sm:grid-cols-3 sm:gap-4 sm:px-5 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-5">
         {products.map((product) => (
           <div
