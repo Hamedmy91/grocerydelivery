@@ -98,7 +98,7 @@ const ProductsCm = () => {
                 <button
                   key={cat}
                   onClick={() => setActiveCategory(cat)}
-                  className={`text-left px-3 py-2 rounded-[8px] text-[14px] transition-colors ${
+                  className={`text-left px-3 py-2 rounded-lg text-[14px] transition-colors ${
                     activeCategory === cat
                       ? "bg-header text-white font-medium"
                       : "text-[#4b5563] hover:bg-[#f3f4f6]"
@@ -118,7 +118,7 @@ const ProductsCm = () => {
                 placeholder="Min"
                 value={minPrice}
                 onChange={(e) => setMinPrice(e.target.value)}
-                className="w-full border border-[#e5e7eb] rounded-[8px] px-3 py-2 text-[14px] text-header placeholder-[#9ca3af] focus:outline-none focus:border-header"
+                className="w-full border border-[#e5e7eb] rounded-lg px-3 py-2 text-[14px] text-header placeholder-[#9ca3af] focus:outline-none focus:border-header"
               />
               <span className="text-[#9ca3af]">-</span>
               <input
@@ -126,7 +126,7 @@ const ProductsCm = () => {
                 placeholder="Max"
                 value={maxPrice}
                 onChange={(e) => setMaxPrice(e.target.value)}
-                className="w-full border border-[#e5e7eb] rounded-[8px] px-3 py-2 text-[14px] text-header placeholder-[#9ca3af] focus:outline-none focus:border-header"
+                className="w-full border border-[#e5e7eb] rounded-lg px-3 py-2 text-[14px] text-header placeholder-[#9ca3af] focus:outline-none focus:border-header"
               />
             </div>
           </div>
@@ -249,7 +249,7 @@ const ProductsCm = () => {
                 <button
                   key={cat}
                   onClick={() => setActiveCategory(cat)}
-                  className={`text-left px-3 py-2 rounded-[8px] text-[14px] transition-colors ${
+                  className={`text-left px-3 py-2 rounded-lg text-[14px] transition-colors ${
                     activeCategory === cat
                       ? "bg-header text-white font-medium"
                       : "text-[#4b5563] hover:bg-[#f3f4f6]"
@@ -269,7 +269,7 @@ const ProductsCm = () => {
                 placeholder="Min"
                 value={minPrice}
                 onChange={(e) => setMinPrice(e.target.value)}
-                className="w-full border border-[#e5e7eb] rounded-[8px] px-3 py-2 text-[14px] text-header placeholder-[#9ca3af] focus:outline-none focus:border-header"
+                className="w-full border border-[#e5e7eb] rounded-lg px-3 py-2 text-[14px] text-header placeholder-[#9ca3af] focus:outline-none focus:border-header"
               />
               <span className="text-[#9ca3af]">-</span>
               <input
@@ -277,7 +277,7 @@ const ProductsCm = () => {
                 placeholder="Max"
                 value={maxPrice}
                 onChange={(e) => setMaxPrice(e.target.value)}
-                className="w-full border border-[#e5e7eb] rounded-[8px] px-3 py-2 text-[14px] text-header placeholder-[#9ca3af] focus:outline-none focus:border-header"
+                className="w-full border border-[#e5e7eb] rounded-lg px-3 py-2 text-[14px] text-header placeholder-[#9ca3af] focus:outline-none focus:border-header"
               />
             </div>
           </div>

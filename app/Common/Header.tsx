@@ -62,12 +62,12 @@ const Header = () => {
             <IoCartOutline />
           </i>
 
-          <button className="flex gap-2 items-center h-9 px-4 rounded-full bg-header text-white cursor-pointer hover:opacity-90 transition-opacity">
+          <Link href="/Sign" className="flex gap-2 items-center h-9 px-4 rounded-full bg-header text-white cursor-pointer hover:opacity-90 transition-opacity">
             <FaRegUser className="text-[16px]" />
             <span className="text-[14px] font-medium whitespace-nowrap">
               Sign In
             </span>
-          </button>
+          </Link>
         </div>
       </div>
 
@@ -76,13 +76,13 @@ const Header = () => {
         className={`sm:hidden absolute top-16 right-4 w-68 bg-white rounded-2xl shadow-[0_4px_15px_rgba(0,0,0,0.12)] border border-[#eeeeee] overflow-hidden transition-all duration-200 origin-top-right ${menu ? "opacity-100 scale-100 visible" : "opacity-0 scale-95 invisible"}`}
       >
         <div className="px-5 py-4 text-[14px]">
-          <button
+          <Link href="/Sign"
             onClick={() => setMenu(false)}
             className="w-full flex items-center gap-5 py-3 text-[#74747d] text-[16px] text-left"
           >
             <FaRegUser className="text-[17px]" />
             <span>Sign In</span>
-          </button>
+          </Link>
           <Link  href="/Products"
             onClick={() => setMenu(false)}
             className="w-full flex items-center gap-5 py-3 text-[#74747d] text-[16px] text-left"
