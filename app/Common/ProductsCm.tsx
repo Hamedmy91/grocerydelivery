@@ -24,8 +24,7 @@ const CATEGORIES = [
   "Dairy & Eggs",
 ];
 
-// نرمال‌سازی رشته برای مقایسه‌ی دسته‌بندی‌ها
-// این تابع فاصله‌های اضافه، بزرگ/کوچکی حروف، و تفاوت "&" با "and" را نادیده می‌گیرد
+
 const normalizeCategory = (value) => {
   if (!value) return "";
   return value
