@@ -6,6 +6,7 @@ import { IoArrowForward } from "react-icons/io5";
 import { getListProduct } from "../Api/Request";
 import Image from "next/image";
 import { FaStar, FaPlus } from "react-icons/fa";
+import Link from "next/link";
 
 const PopProducts = () => {
   const {
@@ -35,13 +36,16 @@ const PopProducts = () => {
             </p>
           </div>
 
-          <button className="flex gap-2 text-header-res-1 items-center">
+          <Link
+            href="/Products"
+            className="flex gap-2 text-header-res-1 items-center"
+          >
             <p className="text-[14px] font-medium">View All</p>
 
             <i>
               <IoArrowForward />
             </i>
-          </button>
+          </Link>
         </div>
         <div className="grid grid-cols-2 gap-4 relative sm:grid sm:grid-cols-5 sm:pl-32 ">
           {products?.slice(0, 10).map((product) => (
